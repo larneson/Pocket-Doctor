@@ -1,0 +1,181 @@
+/* @override 
+	http://localhost/jspack/bs-extra.css */
+	
+/* Tablet in landscape and desktop */
+@media (min-width: 768px) {
+	/* @group Navbar */
+	#navbar-desktop .navbar-inner{
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		border-left: 0px;
+		border-top: 0px;
+		border-right:0px;
+		padding: 15px 60px;}
+		#navbar-desktop .navbar-inner ul.nav{
+			margin: 10px 20px 0 0;}
+		#navbar-desktop .navbar-inner .pull-right{
+			margin-top: 10px;}
+			#navbar-desktop .navbar-inner .pull-right img{
+				margin-top: -5px;}
+		#navbar-desktop .brand{
+			margin-top: 8px;}
+		#navbar-desktop .brand img{
+			margin-top: -7px;}
+	/* @end */
+	
+	
+	/* @group Footer */
+	footer{
+		padding: 40px;}
+		footer div{
+			line-height: 3em;}
+			footer div > *{
+				white-space: nowrap;}
+			footer a, footer a:link, footer a:active,footer a:hover,footer a:visited{
+				padding: 20px;
+				color: #999;
+				text-decoration: none;}
+	/* @end */
+	
+} 
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	body {
+		overflow: hidden;
+		height: 100%;
+		width: 100%;
+		padding: 0px;}
+		.container{
+			position: relative;
+			overflow: hidden;}
+		body > .navbar{
+			left: auto;
+			display: block;
+			position: fixed;
+			margin: 0px;}
+			
+	/* @group Navbar */
+	body > .navbar .navbar-inner{
+		padding: 14px;}
+	#navbar-phone.navbar .btn-navbar, #navbar-phone.navbar a.btn:hover{
+		color: #252525;}
+	#navbar-phone.navbar .btn-navbar.pull-left{
+		float: left !important;}
+	/* @end */
+				
+	/* @group Left */
+	#panel-left li#nav-customer img{
+		/* customer avatar */
+		vertical-align: middle;
+		margin-right: 5px;}
+	/* @end */
+	
+	/* @group center */
+	#panel-center .contain{
+		margin: 10px 10px 50px 10px;}
+	#panel-center .row .span2{
+		margin-bottom: 20px;}
+	
+	#panel-center .row .span2 .avatar{
+		display: inline-block;
+		vertical-align: top;}
+		#panel-center .row .span2 > .avatar img{
+			width: 100px;
+			display: block;
+			margin: 0 10px 10px 0;}
+		#panel-center .row .span2 > .avatar + div{
+			display: inline-block;
+			font-size: small;}
+		#panel-center .row .span2 > .avatar + div > *:first-child{
+			font-size: 16px;
+			line-height: normal;}
+	/* @end */
+				
+	/* @group Slide Panels */
+	
+	/* Assert padding 0px because of customer button */
+		.slide-panel.left{
+			padding: 0px !important;}
+			
+		.slide-panel.center{
+			overflow: hidden;
+			overflow-y: scroll;
+			position: relative;}
+		.slide-panel:not(.center) .contain{
+			overflow:hidden;
+			overflow-y: scroll;	}
+			
+		.slide-panel.left,
+		.slide-panel.right{
+			position: fixed;
+			top: 0px;
+			background: black;
+			width: 80%;
+			max-width: 80%;}
+			.slide-panel .affix{
+				position: relative;}
+		
+			.slide-panel.left{
+			    left:-80%; }
+				.slide-panel.left.in{
+					left:0px; }
+				.slide-panel.center.toleft.in{
+					overflow: hidden;
+			   		left: 80%;}
+			.slide-panel.right{
+			   right:-80%;}
+			   	.slide-panel.right.in{
+					right:0px;}
+				.slide-panel.center.toright.in{
+					right: 80%;}
+			.slide-panel{
+				transition: all .3s;
+				-moz-transition: all .3s;
+				-webkit-transition: all .3s;
+				-o-transition: all .3s;}
+			
+		#panel-left{
+			background-color: #242424;}
+			#panel-left ul.nav{
+				padding-bottom: 50px;}
+				#panel-left ul.nav li:not(.footer):nth-child(2n){
+					background-color: #353434;}
+				#panel-left ul.nav li:not(.footer) a{
+					font-size: large;
+					padding: 20px;
+					border: 0px;
+					color: #ececec;}
+				#panel-left ul.nav li:not(.footer).active a{
+					/* when at active */
+					background-color: #5a2866;}
+				#panel-left ul.nav li:not(.active):not(.footer) a:hover{
+					background-color: inherit;}
+	
+			#panel-left li#nav-customer{
+				border-top: 1px solid #999;
+				position: absolute;
+				bottom: 1px;
+				width: 100%;
+				background-color: #3e3d3d;}
+				#panel-left li#nav-customer a{
+					padding: 0px;}
+			#panel-left a u{
+				/* hides the shortcut underlines */
+				text-decoration: none;}
+	
+	/* @end */
+}
+
+/* @group Left */
+#panel-left li.footer{
+	margin: 10px;
+	font-size: 12px;}
+	#panel-left li.footer div a{
+		margin: 0 2%;
+		font-size: 12px;
+		color: #08c;}
+		#panel-left li.footer a:hover{
+			background-color: inherit;}
+/* @end */
