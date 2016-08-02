@@ -1,0 +1,48 @@
+/* font size on the front panel */
+.navbar{font-size: 70px;min-height:40px;
+color:#444}
+#says_my_logs{padding:20px}
+html{height:100%}
+#my_pills{padding:30px;background-color:#a3dae5;color: #005a97;width:auto;min-height:100%;}
+   #list{padding-bottom:10px}
+   #pill_screen{padding:10px;background-color:#fff;width:80%;margin-left: auto; margin-right: auto;color:#666;text-align:center;}
+   #pill_bottle{padding:10px; height: auto; min-height:250px; background-color:#ff9900;width:70%;margin-left: auto; margin-right: auto; overflow:scroll;color:#444;text-align:center;}
+   #center_style{width: auto; height: auto; color:#000;}
+   #left_style{padding:20px;background-color: #eee;color:#444}
+
+   .med_class{display:inline;}
+   #says_pocket_doctor{text-align:center}
+   body{height:100%}
+   .pill{margin:3px;}
+   .med_small{margin-bottom:5px;}
+   .med_form{margin:5px;}
+   .size_toggle{float:right;}
+/*pressure/sugar ones*/
+#pressure_style{padding:20px;background-color:#ccffcc;color:#003300}
+#sugar_style{padding:20px;background-color:#ff6666;color:#552222}
+#sugar_log{background-color:#fee}
+#pressure_log{background:#f0fff0}
+
+#pill_style{padding:20px;background-color:#a3dae5;color: #005a97}
+#pill_log{background-color:#def;color:#001133}
+
+#pressure_input{padding:20px;background-color:#ccffcc;color:#003300}
+#sugar_input{padding:20px;background-color:#ff6666;color:#552222}
+
+#right_style{background-color: #eee;color:#444;}
+   .date_pressure_col{width:25%}
+.time_pressure_col{width:20%}
+.pressure_input_style{width:30%;max-width:270px}
+.sugar_input_style{width:25%;min-width:130px;max-width:270px}
+.delete_col{width:15px;}
+.edit_pressure{width:90%;}
+
+.date_pill_col{width:25%}
+.time_pill_col{width:20%;}
+.date_sugar_col{width:15%}
+.time_sugar_col{width:15%}
+.meal_col{width:15%}
+.before_after_col{width:10%}
+#edit_pressure{float:right}
+#edit_sugar{float:right}
+.dropdown-menu{text-align:left}
